@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Booster | Ubuntu Performance Utility</title>
+    <meta name="description"
+        content="Monitor, update, clean, and optimize your Ubuntu system with System Booster - The ultimate desktop application for Linux performance management.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">
+                <i data-lucide="zap"></i>
+                System<span>Booster</span>
+            </a>
+            <div class="nav-links-wrapper">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#performance">Performance</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#guide">Installation</a></li>
+                </ul>
+            </div>
+            <a href="https://drive.usercontent.google.com/download?id=10wOFF-EYy68xb5Z8CrSA6IfE1VUhX4RE&export=download&authuser=0&confirm=t&uuid=c505bfb6-f387-431b-afbc-8c3424521f6c&at=AGN2oQ1UPGNX9v_98ix-aXETIjPY:1774525401253"
+                class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;" target="_blank">Download
+                v1.0</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero container" id="home">
+        <div class="hero-content">
+            <span class="hero-subtitle">Optimize Your Ubuntu Machine</span>
+            <h1 class="hero-title">Powerful System Management For Ubuntu</h1>
+            <p>Monitor CPU, RAM, and Disk in real-time. System Booster helps you keep your Linux environment clean,
+                updated, and performing at its peak with a professional GUI.</p>
+            <div style="display: flex; gap: 1rem;">
+                <a href="#download" class="btn btn-primary">Download App</a>
+                <a href="#features" class="btn btn-secondary">View Features</a>
+            </div>
+        </div>
+        <div class="hero-mockup">
+            <div class="mockup-container">
+                <img src="assets/mockup.png" alt="System Booster Dashboard Mockup">
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section-padding container reveal" id="about">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <h2 style="text-align: center;">About the App</h2>
+            <p style="font-size: 1.1rem;">System Booster is a GUI-based Ubuntu desktop application built to help users
+                maintain system performance with ease. Developed using Python and CustomTkinter, it provides a seamless
+                experience for monitoring resource usage and performing critical maintenance tasks without touching the
+                terminal.</p>
+            <p>Whether you're a developer, a student, or a power user, System Booster simplifies Ubuntu management
+                through modular tools like real-time tracking, background task support, and root-aware package updates.
+            </p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section-padding container" id="features">
+        <h2 class="reveal">Pro Features</h2>
+        <div class="features-grid">
+            <div class="feature-card glass reveal">
+                <div class="feature-icon"><i data-lucide="cpu"></i></div>
+                <h3>Real-time CPU Monitoring</h3>
+                <p>Track per-core usage and identify resource-heavy processes instantly with live frequency updates.</p>
+            </div>
+            <div class="feature-card glass reveal">
+                <div class="feature-icon"><i data-lucide="activity"></i></div>
+                <h3>RAM Usage Tracking</h3>
+                <p>Monitor physical memory and swap space usage with detailed breakdowns of cached and free memory.</p>
+            </div>
+            <div class="feature-card glass reveal">
+                <div class="feature-icon"><i data-lucide="hard-drive"></i></div>
+                <h3>Disk Usage Monitoring</h3>
+                <p>Scan your system partitions to find large files and monitor write/read speeds across your drives.</p>
+            </div>
+            <div class="feature-card glass reveal">
+                <div class="feature-icon"><i data-lucide="refresh-cw"></i></div>
+                <h3>System Updater</h3>
+                <p>Keep your Ubuntu packages up-to-date. Handle APT and Snap updates through a secure GUI interface.</p>
+            </div>
+            <div class="feature-card glass reveal">
+                <div class="feature-icon"><i data-lucide="trash-2"></i></div>
+                <h3>System Cleaner</h3>
+                <p>Remove temporary files, old logs, and cached data to free up gigabytes of valuable disk space.</p>
+            </div>
+            <div class="feature-card glass reveal">
+                <div class="feature-icon"><i data-lucide="terminal"></i></div>
+                <h3>Script Execution</h3>
+                <p>Run custom background scripts and manage system services directly from the dashboard.</p>
+            </div>
+            <div class="feature-card glass reveal">
+                <div class="feature-icon"><i data-lucide="shield"></i></div>
+                <h3>Root-aware Behavior</h3>
+                <p>Securely handles administrative tasks when needed, ensuring system safety and proper permissions.</p>
+            </div>
+            <div class="feature-card glass reveal">
+                <div class="feature-icon"><i data-lucide="layout"></i></div>
+                <h3>User-friendly GUI</h3>
+                <p>A modern, clean interface built with CustomTkinter that feels right at home on any desktop.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Preview -->
+    <section class="section-padding container glass reveal" id="performance"
+        style="border-radius: 30px; margin-top: 50px;">
+        <h2>Live Performance Dashboard</h2>
+        <p style="text-align: center; margin-bottom: 4rem;">System Booster provides high-precision data visualization
+            for your Ubuntu machine.</p>
+        <div class="dashboard-container">
+            <div class="stat-box">
+                <div class="progress-ring-container">
+                    <svg class="progress-ring" width="150" height="150">
+                        <circle class="progress-ring-circle" stroke-width="8" stroke="rgba(255,255,255,0.05)"
+                            fill="transparent" r="66" cx="75" cy="75" />
+                        <circle id="cpu-ring" class="progress-ring-circle" stroke-width="8" stroke-dasharray="414.69"
+                            stroke-dashoffset="414.69" stroke-linecap="round" fill="transparent" r="66" cx="75"
+                            cy="75" />
+                    </svg>
+                    <div class="stat-value" id="cpu-value">0%</div>
+                </div>
+                <h3>CPU Usage</h3>
+                <p>Monitoring active cores</p>
+            </div>
+            <div class="stat-box">
+                <div class="progress-ring-container">
+                    <svg class="progress-ring" width="150" height="150">
+                        <circle class="progress-ring-circle" stroke-width="8" stroke="rgba(255,255,255,0.05)"
+                            fill="transparent" r="66" cx="75" cy="75" />
+                        <circle id="ram-ring" class="progress-ring-circle" stroke-width="8" stroke-dasharray="414.69"
+                            stroke-dashoffset="414.69" stroke-linecap="round" fill="transparent" r="66" cx="75" cy="75"
+                            style="stroke: var(--accent-blue);" />
+                    </svg>
+                    <div class="stat-value" id="ram-value">0%</div>
+                </div>
+                <h3>RAM Usage</h3>
+                <p>8GB / 16GB</p>
+            </div>
+            <div class="stat-box">
+                <div class="progress-ring-container">
+                    <svg class="progress-ring" width="150" height="150">
+                        <circle class="progress-ring-circle" stroke-width="8" stroke="rgba(255,255,255,0.05)"
+                            fill="transparent" r="66" cx="75" cy="75" />
+                        <circle id="disk-ring" class="progress-ring-circle" stroke-width="8" stroke-dasharray="414.69"
+                            stroke-dashoffset="414.69" stroke-linecap="round" fill="transparent" r="66" cx="75" cy="75"
+                            style="stroke: #e74c3c;" />
+                    </svg>
+                    <div class="stat-value" id="disk-value">0%</div>
+                </div>
+                <h3>Disk Capacity</h3>
+                <p>240GB / 512GB</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="section-padding container" id="download">
+        <h2 class="reveal">Download System Booster</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="glass reveal" style="padding: 3rem; text-align: center; border: 2px solid var(--accent-green);">
+                <i data-lucide="archive"
+                    style="width: 64px; height: 64px; color: var(--accent-green); margin-bottom: 1.5rem;"></i>
+                <h3 style="font-size: 1.8rem;">system-booster.zip</h3>
+                <p>Latest Version: <strong>v1.0.4-stable</strong></p>
+                <p>File Size: <strong>12.5 MB</strong></p>
+                <p style="font-size: 0.9rem; margin-bottom: 2rem;">Compatible with Ubuntu 20.04, 22.04, and 24.04 LTS.
+                </p>
+                <a href="https://drive.usercontent.google.com/download?id=10wOFF-EYy68xb5Z8CrSA6IfE1VUhX4RE&export=download&authuser=0&confirm=t&uuid=c505bfb6-f387-431b-afbc-8c3424521f6c&at=AGN2oQ1UPGNX9v_98ix-aXETIjPY:1774525401253"
+                    class="btn btn-primary" style="font-size: 1.2rem; width: 100%;" target="_blank">Download Now</a>
+            </div>
+            <div class="reveal">
+                <h3>Quick Install</h3>
+                <p>Run these commands in your terminal to get started immediately after extraction.</p>
+                <div class="code-wrapper">
+                    <div class="copy-btn" onclick="copyCode(this)">Copy</div>
+                    <div class="code-block">
+                        <pre><code>chmod +x install.sh
+./install.sh</code></pre>
+                    </div>
+                </div>
+                <h3>Manual Execution</h3>
+                <p>If you prefer running the application without installation:</p>
+                <div class="code-wrapper">
+                    <div class="copy-btn" onclick="copyCode(this)">Copy</div>
+                    <div class="code-block">
+                        <pre><code>venv/bin/python main.py</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Guide -->
+    <section class="section-padding container reveal" id="guide">
+        <h2 style="text-align: left; margin-bottom: 2rem;">Installation Guide</h2>
+        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div class="glass" style="padding: 1.5rem; display: flex; gap: 1.5rem; align-items: center;">
+                <div
+                    style="width: 40px; height: 40px; background: var(--accent-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--bg-darker);">
+                    1</div>
+                <div>
+                    <h4 style="margin: 0;">Download the app</h4>
+                    <p style="margin: 0;">Click the download button above to get the compressed `system-booster.zip`
+                        file.</p>
+                </div>
+            </div>
+            <div class="glass" style="padding: 1.5rem; display: flex; gap: 1.5rem; align-items: center;">
+                <div
+                    style="width: 40px; height: 40px; background: var(--accent-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--bg-darker);">
+                    2</div>
+                <div>
+                    <h4 style="margin: 0;">Extract zip file</h4>
+                    <p style="margin: 0;">Right-click the file and select "Extract Here" or use `unzip
+                        system-booster.zip` in terminal.</p>
+                </div>
+            </div>
+            <div class="glass" style="padding: 1.5rem; display: flex; gap: 1.5rem; align-items: center;">
+                <div
+                    style="width: 40px; height: 40px; background: var(--accent-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--bg-darker);">
+                    3</div>
+                <div>
+                    <h4 style="margin: 0;">Open terminal</h4>
+                    <p style="margin: 0;">Navigate into the extracted folder and open a terminal (Ctrl+Alt+T).</p>
+                </div>
+            </div>
+            <div class="glass" style="padding: 1.5rem; display: flex; gap: 1.5rem; align-items: center;">
+                <div
+                    style="width: 40px; height: 40px; background: var(--accent-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--bg-darker);">
+                    4</div>
+                <div>
+                    <h4 style="margin: 0;">Run install script</h4>
+                    <p style="margin: 0;">Run `./install.sh` to install dependencies and create a desktop entry.</p>
+                </div>
+            </div>
+            <div class="glass" style="padding: 1.5rem; display: flex; gap: 1.5rem; align-items: center;">
+                <div
+                    style="width: 40px; height: 40px; background: var(--accent-green); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--bg-darker);">
+                    5</div>
+                <div>
+                    <h4 style="margin: 0;">Launch app</h4>
+                    <p style="margin: 0;">Search for "System Booster" in Ubuntu Activities and start optimizing!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="section-padding container">
+        <h2 class="reveal">Application Preview</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+            <div class="glass reveal" style="overflow: hidden; border-radius: 12px; transition: transform 0.3s ease;">
+                <div style="height: 180px; overflow: hidden;">
+                    <img src="assets/Dashboard View.png" alt="Dashboard View"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 1rem; text-align: center; font-weight: 600;">Dashboard View</div>
+            </div>
+            <div class="glass reveal" style="overflow: hidden; border-radius: 12px; transition: transform 0.3s ease;">
+                <div style="height: 180px; overflow: hidden;">
+                    <img src="assets/System Updater.png" alt="System Updater"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 1rem; text-align: center; font-weight: 600;">System Updater</div>
+            </div>
+            <div class="glass reveal" style="overflow: hidden; border-radius: 12px; transition: transform 0.3s ease;">
+                <div style="height: 180px; overflow: hidden;">
+                    <img src="assets/Clean-up Tool.png" alt="Clean-up Tool"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 1rem; text-align: center; font-weight: 600;">Clean-up Tool</div>
+            </div>
+            <div class="glass reveal" style="overflow: hidden; border-radius: 12px; transition: transform 0.3s ease;">
+                <div style="height: 180px; overflow: hidden;">
+                    <img src="assets/Task Manager.png" alt="Task Manager"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div style="padding: 1rem; text-align: center; font-weight: 600;">Task Manager</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Description -->
+    <section class="section-padding container reveal">
+        <div class="glass" style="padding: 3rem;">
+            <h3>Built for Ubuntu Performance</h3>
+            <p>System Booster is designed to improve usability and simplify maintenance tasks on Ubuntu Linux. The
+                software leverage modular components to provide a rock-solid utility that helps you avoid terminal
+                complexity for day-to-day maintenance.</p>
+            <p>Whether you need to monitor if a specific background process is slowing down your system or you want to
+                clear gigabytes of junk files, System Booster handles it with a professional, root-aware architecture.
+            </p>
+            <div style="display: flex; gap: 2rem; margin-top: 2rem;">
+                <div>
+                    <h5 style="color: var(--accent-green);">Technology</h5>
+                    <p style="margin: 0; font-size: 0.9rem;">Python 3.10+, CustomTkinter, Psutil</p>
+                </div>
+                <div>
+                    <h5 style="color: var(--accent-blue);">Architecture</h5>
+                    <p style="margin: 0; font-size: 0.9rem;">Modular, Event-driven, Root-aware</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commands Section -->
+    <section class="section-padding container"
+        style="background: var(--bg-darker); border-radius: 30px; border: 1px solid var(--glass-border);">
+        <h2 class="reveal">Developer Commands</h2>
+        <p style="text-align: center;">Useful terminal shortcuts for interacting with the app environment.</p>
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 3rem;">
+            <div class="glass reveal" style="padding: 1.5rem;">
+                <code>./install.sh</code>
+                <p style="margin-top: 0.5rem; font-size: 0.8rem;">Initialize environment and install requirements.</p>
+            </div>
+            <div class="glass reveal" style="padding: 1.5rem;">
+                <code>python3 main.py</code>
+                <p style="margin-top: 0.5rem; font-size: 0.8rem;">Run the application directly using system python.</p>
+            </div>
+            <div class="glass reveal" style="padding: 1.5rem;">
+                <code>ps -ef | grep python</code>
+                <p style="margin-top: 0.5rem; font-size: 0.8rem;">Check for running background app processes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-padding container" style="border-top: 1px solid var(--glass-border); padding-top: 50px;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 3rem;">
+            <div>
+                <a href="#" class="logo">
+                    <i data-lucide="zap"></i>
+                    System<span>Booster</span>
+                </a>
+                <p style="margin-top: 1rem; max-width: 300px;">The ultimate companion for your Ubuntu Linux experience.
+                    Free, open-source, and powerful.</p>
+            </div>
+            <div style="display: flex; gap: 4rem;">
+                <ul style="list-style: none;">
+                    <li><strong>Product</strong></li>
+                    <li><a href="#home" style="text-decoration: none; color: var(--text-gray);">Home</a></li>
+                    <li><a href="#features" style="text-decoration: none; color: var(--text-gray);">Features</a></li>
+                    <li><a href="#download" style="text-decoration: none; color: var(--text-gray);">Download</a></li>
+                </ul>
+                <ul style="list-style: none;">
+                    <li><strong>Support</strong></li>
+                    <li><a href="#guide" style="text-decoration: none; color: var(--text-gray);">Guide</a></li>
+                    <li><a href="#" style="text-decoration: none; color: var(--text-gray);">GitHub</a></li>
+                    <li><a href="#" style="text-decoration: none; color: var(--text-gray);">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="margin-top: 50px; text-align: center; color: var(--text-gray); font-size: 0.8rem;">
+            &copy; 2026 System Booster Project. Developed for Ubuntu Community.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Init Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
